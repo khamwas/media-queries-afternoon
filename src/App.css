@@ -1,32 +1,214 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 750;
+}
+
+p {
+  color: gray;
+  font-size: 1.25em;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  z-index: 0;
+  position: sticky;
+  top: 0;
+  /* background: #212529; */
+}
+
+.scrollNav {
+  background: #212529;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    background: #212529;
+    height: 55px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 760px;
+  background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  /* overflow: hidden; */
+  color: white;
+  margin-top: -100px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    height: 45vh;
+    margin-top: 0;
+  }
+}
+
+.logo {
+  margin-left: 1em;
+  font-size: 1.75em;
+  white-space: nowrap;
+  font-family: cursive;
+  font-weight: 600;
+  color: #fed136;
+  /* z-index: -1; */
+}
+
+.cursive {
+  margin-left: 1em;
+  text-align: center;
+  font-size: 2.5em;
+  white-space: nowrap;
+  font-family: cursive;
+  font-weight: 600;
+}
+
+.headerText {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+@media (max-width: 1000px) {
+  .headerText {
+    font-size: 3.25em;
+  }
+  .cursive {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 1.25em;
+  }
+}
+
+.headerButton {
+  width: 225px;
+  height: 65px;
+  background: #fed136;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-weight: 800;
+  margin: 10px;
+}
+
+@media (max-width: 1000px) {
+  .links {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #212529;
+    margin: 5px;
+    margin-top: -120px;
+  }
+}
+
+.linkItem {
+  color: white;
+  margin-right: 10px;
+  font-weight: 600;
+  margin: 10px;
+  /* background: #212529; */
+}
+
+.linkItem:hover {
+  color: #fed136;
+}
+
+.dropStyle {
+  margin-top: 120px;
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75px;
+  height: 40px;
+  background: #fed136;
+  border-radius: 5%;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 10px;
+  z-index: 5;
+}
+
+@media (min-width: 1000px) {
+  .menu {
+    display: none;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon {
+  height: 125px;
+  width: 125px;
+  background: #fed136;
+  border-radius: 50%;
+}
+
+.serviceItems {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.miniHeader {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center;
 }
